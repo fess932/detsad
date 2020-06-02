@@ -9,4 +9,4 @@ build:
     - go
 
 run:
-  web: detsad
+  web: github.com/heroku/go-getting-started
