@@ -2,6 +2,7 @@ package main
 
 import (
 	"net/http"
+	"os"
 )
 
 type httpHandler struct{}
@@ -13,5 +14,7 @@ func (h httpHandler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 
 func main() {
 	handler := httpHandler{}
-	http.ListenAndServe(":80", handler)
+
+	port := os.Getenv("PORT")
+	http.ListenAndServe(":"+port, handler)
 }
