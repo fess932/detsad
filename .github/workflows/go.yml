@@ -1,13 +1,13 @@
-name: 'Deploy Surge'
+name: "Deploy Surge"
 
 on:
   push:
     branches:
-    - master
+      - master
 
 jobs:
   deploy:
-    name: 'Deploy'
+    name: "Deploy"
     runs-on: ubuntu-latest
 
     steps:
