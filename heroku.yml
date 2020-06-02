@@ -9,4 +9,4 @@ build:
     - go
 
 run:
-  web: jpg/detsad
+  web: detsad
